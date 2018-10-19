@@ -1,13 +1,12 @@
 package java練習２;
 
 public class Java_practice {
-
-	private String name=null;
-	private int age=0;
+	private String name = "";
+	private int age = 0;
 
 	public Java_practice(){}
 
-	public Java_practice(String name, int age){
+	public Java_practice(String name , int age){
 		this.name=name;
 		this.age=age;
 	}
@@ -24,9 +23,7 @@ public class Java_practice {
 		return this.age;
 	}
 
-	public void getAge(int age){
+	public void setAge(int age){
 		this.age=age;
 	}
-
-
 }

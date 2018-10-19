@@ -14,7 +14,7 @@ public class DBConnector {
 
 
 	public Connection getConnection() {
-		Connection con = null;
+		Connection con = null;//←ここで一回リセットをしている。
 		try{
 		Class.forName(driverName);
 		con = DriverManager.getConnection(url,user,password);
