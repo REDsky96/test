@@ -28,7 +28,7 @@ public class TestUserDAO {
 	ps.setString(1, name);//数字は最初の？にという意味
 	ps.setString (2, password);//数字は2番目の？にという意味
 
-	//select(set)なのでこの文が必要
+	//select(set)なのでこの文が必要 実行メソッドがexecuteQuery
 	ResultSet rs=ps.executeQuery();
 
 	if (rs.next()) {
