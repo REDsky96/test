@@ -1,4 +1,4 @@
-package com.internousdev.webproj4.dto;
+package com.internousdev.webproj5.dto;
 
 public class HelloStrutsDTO {
 	private int userId;
@@ -11,7 +11,7 @@ public class HelloStrutsDTO {
 	}
 
 	public void setUserId(int userId){
-		this.userId=userId;
+		this.userId = userId;
 	}
 
 	public String getUserName(){
@@ -19,7 +19,7 @@ public class HelloStrutsDTO {
 	}
 
 	public void setUserName(String userName){
-		this.userName=userName;
+		this.userName = userName;
 	}
 
 	public String getPassword(){

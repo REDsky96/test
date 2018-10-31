@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8">
+     <title>演習2</title>    
+ </head>
+ <body>
+     <form>
+         <select name="age">
+             <option value="a">選択してください</option>
+               <script>
+                   for(var i=18; i<=65; i++){
+                       document.write("<option value='z'>");
+                   document.write(i);
+                   document.write("</option>");
+                   }
+               </script>
+         
+         </select>
+     </form>
+     
+     <script>
+         function mennseki(hannkei){
+             return "半径"+hannkei+"の面積は"+hannkei*hannkei*3.14+"㎠です"
+         }
+         document.write(mennseki(5));
+         document.write("<br>");
+         document.write(mennseki(7));
+         document.write("<br>");
+         document.write(mennseki(10));
+         
+     </script>
+     <br>
+     
+     <script>
+         function park(kumi,otona,kodomo){
+            return  kumi+"グループの合計金額は"+(otona*500+kodomo*200);
+         }
+         document.write(park("A",2,4));
+         document.write("<br>");
+         document.write(park("B",1,5));
+         document.write("<br>");
+         document.write(park("C",3,7));
+     </script>
+ </body>
+
+
+
+</html>    
