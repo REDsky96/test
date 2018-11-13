@@ -1,0 +1,16 @@
+package com.esite.dto;
+
+public class BuyItemDTO {
+	private int id;
+	private String itemname;
+	private String itemprice;
+
+	public int getId(){
+		return id;
+	}
+
+	public void setId(int id){
+		this.id = id;
+	}
+
+}

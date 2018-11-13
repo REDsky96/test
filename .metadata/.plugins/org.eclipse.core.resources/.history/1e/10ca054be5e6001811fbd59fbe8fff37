@@ -1,0 +1,17 @@
+package practice;
+
+import java.util.TreeMap;
+import java.util.Map;
+
+public class Practice2 {
+
+	public static void main(String[] args){
+		Map<String, Object> abc = new TreeMap<String, Object>();
+		abc.put("inoue1", 111);
+		abc.put("inoue2", 222);
+		abc.put("inoue3", 333);
+	}
+
+
+
+}

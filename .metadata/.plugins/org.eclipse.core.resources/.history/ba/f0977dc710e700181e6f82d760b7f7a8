@@ -1,0 +1,18 @@
+package com.esite.dao;
+
+import java.sql.Connection;
+
+import com.esite.dto.LoginDTO;
+import com.esite.util.DBConnector;
+
+public class LoginDAO {
+
+	public LoginDTO getLoginUserInfo(String loginUserId, String loginPassword){
+
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+	}
+
+
+
+}

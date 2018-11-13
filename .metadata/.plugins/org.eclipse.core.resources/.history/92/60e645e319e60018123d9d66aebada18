@@ -1,0 +1,21 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Practice {
+	public static void main(String[] args){
+		List<String> abc = new ArrayList<String>();
+		abc.add("ABC");
+		abc.add("inoue");
+		abc.add("saito");
+		int index = abc.indexOf("saito");
+		System.out.println(abc);
+		System.out.println(index);
+
+		String[] names = {"inoue","yamada","ito"};
+		System.out.println(names[0]);
+		}
+	}
+
+

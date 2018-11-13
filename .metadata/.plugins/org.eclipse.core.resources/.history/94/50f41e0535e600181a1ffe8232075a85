@@ -1,0 +1,28 @@
+package com.practice.webpro.dao;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.practice.webpro.dto.InquiryCompleteDTO;
+import com.practice.webpro.util.DBConnector;
+import java.sql.PreparedStatement;
+
+
+public class InquiryCompleteDAO {
+
+	List<InquiryCompleteDTO> inquiryDTOList = new ArrayList<InquiryCompleteDTO>();
+
+	public List<InquiryCompleteDTO> select(){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+
+		String sql = "select * from inquiry";
+		try{
+			PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+		}
+
+	}
+
+}

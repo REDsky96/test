@@ -1,0 +1,13 @@
+package com.esite.dao;
+
+import com.esite.dto.LoginDTO;
+
+public class LoginDAO {
+
+	public LoginDTO getLoginUserInfo(String loginUserId, String loginPassword){
+
+	}
+
+
+
+}

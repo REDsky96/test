@@ -1,11 +1,11 @@
 package com.internousdev.template.dao;
 
   import java.sql.Connection;
-  import java.sql.PreparedStatement;
-  import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
-  import com.internousdev.template.dto.LoginDTO;
-  import com.internousdev.template.util.DBConnector;
+import com.internousdev.template.dto.LoginDTO;
+import com.internousdev.template.util.DBConnector;
 
 public class LoginDAO {
 
@@ -22,7 +22,7 @@ public class LoginDAO {
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			if(resultSet.next()){
-				loginDTO.setLoginId(resultSet.getString("login_id"));
+				loginDTO.setLoginId(resultSet.getString("login_id"));//カラム名と一緒
 				loginDTO.setLoginPassword(resultSet.getString("login_pass"));
 				loginDTO.setUserName(resultSet.getString("user_name"));
 

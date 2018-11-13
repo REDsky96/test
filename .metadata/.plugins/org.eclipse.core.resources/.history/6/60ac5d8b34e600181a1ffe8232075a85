@@ -1,0 +1,17 @@
+package com.practice.webpro.dao;
+
+import java.util.List;
+import java.util.ArrayList;
+import com.practice.webpro.dto.InquiryCompleteDTO;
+
+
+public class InquiryCompleteDAO {
+
+	List<InquiryCompleteDTO> inquiryDTOList = new ArrayList<InquiryCompleteDTO>();
+
+	public List<InquiryCompleteDTO> select(){
+		DBConnector db = new DBConnector();
+
+	}
+
+}

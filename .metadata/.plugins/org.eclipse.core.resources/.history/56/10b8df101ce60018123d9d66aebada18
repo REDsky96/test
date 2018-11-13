@@ -1,0 +1,20 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Practice {
+	public static void main(String[] args){
+		List<String> abc = new ArrayList<String>();
+		abc.add("ABC");
+		abc.add("inoue");
+		abc.add("saito");
+		System.out.println(abc);
+		abc.get(0);
+		abc.set(0, "DEF");
+		System.out.println(abc);
+
+	}
+}
+
+

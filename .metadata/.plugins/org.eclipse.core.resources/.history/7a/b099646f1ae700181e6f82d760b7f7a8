@@ -1,0 +1,22 @@
+package com.ecsite.action;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.esite.dao.BuyItemDAO;
+import com.esite.dao.LoginDAO;
+import com.esite.dto.LoginDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginAction extends ActionSupport implements SessionAware{
+
+	private String loginUserId;
+
+
+
+	LoginDAO dao = new LoginDAO();
+	LoginDTO dto = new LoginDTO();
+	BuyItemDAO daob = new BuyItemDAO();
+
+
+
+}

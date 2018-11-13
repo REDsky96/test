@@ -1,0 +1,5 @@
+package com.esite.dto;
+
+public class BuyItemDTO {
+
+}

@@ -1,0 +1,27 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Practice {
+
+		public static void main(String[] args) {
+	        List<String> list = new ArrayList<String>();//[1]
+	        list.add("りんご");//[2]
+	        list.add("もも");//[3]
+	        list.add("みかん");//[4]
+	        int index = list.indexOf("みかん");//[5]
+	        System.out.println("[6] index = " + index);
+	        list.remove(index);//[7]
+	        System.out.println("[8] 要素[0]:" + list.get(0));
+	        System.out.println("[9] 要素[1]:" + list.get(1));
+	        try {//[10]
+	            System.out.println("[11] 要素[2]:" + list.get(2));
+	        } catch (IndexOutOfBoundsException indexOutOfBoundsException ) {//[12]
+	            System.out.println("[13] 要素[2]:例外発生");
+	        }
+
+	    }
+}
+
+

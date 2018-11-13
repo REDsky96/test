@@ -1,0 +1,27 @@
+package com.esite.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.esite.dto.LoginDTO;
+import com.esite.util.DBConnector;
+
+public class LoginDAO {
+
+	public LoginDTO getLoginUserInfo(String loginUserId, String loginPassword){
+
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+		LoginDTO dto = new LoginDTO();
+
+		String sql = "select * from login_user_transaction wehere login_id = ? and login_pass=?";
+
+		try{
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+		}
+	}
+
+
+
+}

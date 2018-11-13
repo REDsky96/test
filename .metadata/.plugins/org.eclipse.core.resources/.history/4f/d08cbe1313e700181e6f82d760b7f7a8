@@ -1,0 +1,11 @@
+package com.esite.dao;
+
+import com.esite.dto.BuyItemDTO;
+
+public class BuyItemDAO {
+
+	public BuyItemDTO getBuyItemInfo(){
+      DBConnector db = new DBConnector();
+	}
+
+}
