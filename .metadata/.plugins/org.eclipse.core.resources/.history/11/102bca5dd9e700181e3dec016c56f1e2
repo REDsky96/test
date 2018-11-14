@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix = "s" uri = "/struts-tags" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UserCreate</title>
+</head>
+<body>
+  <p>～UserCreate～</p>
+
+  <s:if test = "errorMessage != ''">
+  <s:property value = "errorMessage" escape = "false"/>
+  </s:if>
+
+</body>
+</html>

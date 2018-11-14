@@ -1,0 +1,17 @@
+package com.ecsite.action;
+
+import java.util.*;
+import java.sql.*;
+
+public class UserCreateCompleteAction {
+
+	private String loginUserId;
+	private String loginPassword;
+	private String userName;
+	private Map<String, Object>session;
+
+	public String execute() throws SQLException{
+
+	}
+
+}

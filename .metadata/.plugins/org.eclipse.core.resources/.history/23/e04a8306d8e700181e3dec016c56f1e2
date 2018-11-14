@@ -1,0 +1,5 @@
+package com.ecsite.action;
+
+public class UserCreateAction {
+
+}

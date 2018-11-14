@@ -1,0 +1,8 @@
+package com.esite.dao;
+
+import com.esite.util.DateUtil;
+
+public class UserCreateCompleteDAO {
+	private DateUtil U = new DateUtil();
+
+}

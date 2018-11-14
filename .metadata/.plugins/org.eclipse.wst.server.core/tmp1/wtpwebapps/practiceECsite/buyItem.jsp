@@ -11,10 +11,10 @@
   <p>BuyItem</p>
     <span>商品名</span>
     <s:form action = "BuyItemAction">
-    <s:property value = "session.buyItem_name"/>
+    <s:property value = "#session.buyItem_name"/>
     <br>
     <span>値段</span>
-    <s:property value = "session.buyItem_price"/><span>円</span>
+    <s:property value = "#session.buyItem_price"/><span>円</span>
     <br>
     <span>在庫</span>
     <select name = "stock">

@@ -1,0 +1,5 @@
+package com.esite.dao;
+
+public class UserCreateCompleteDAO {
+
+}

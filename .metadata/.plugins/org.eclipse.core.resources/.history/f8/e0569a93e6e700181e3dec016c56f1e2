@@ -1,0 +1,14 @@
+package com.esite.util;
+
+import java.text.SimpleDateFormat;
+import jave.util*:
+
+public class DateUtil {
+
+	public String getDate(){
+		Date date = new Date();
+        SimpleDateFormat sdate = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        return sdate.format(date);
+	}
+
+}

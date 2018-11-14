@@ -16,7 +16,7 @@ public class LoginDAO {
 		Connection con = db.getConnection();
 		LoginDTO dto = new LoginDTO();
 
-		String sql = "select * from login_user_transaction wehere login_id = ? and login_pass=?";
+		String sql = "select * from login_user_transaction where login_id = ? and login_pass = ?";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -26,7 +26,7 @@ public class LoginDAO {
 
 			if(rs.next()){
 				dto.setUserid(rs.getString("login_id"));
-				dto.setPassword(rs.getString("login_password"));
+				dto.setPassword(rs.getString("login_pass"));
 				dto.setUsername(rs.getString("user_name"));
 
 				if(!(rs.getString("login_id").equals(null))){
