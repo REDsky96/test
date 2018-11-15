@@ -16,7 +16,7 @@
     <span>値段</span>
     <s:property value = "#session.buyItem_price"/><span>円</span>
     <br>
-    <span>在庫</span>
+    <span>個数</span>
     <select name = "stock">
       <option value = "1" selected = "selected">1</option>
       <option value = "2">2</option>
@@ -27,8 +27,9 @@
 
     <br>
     <span>支払い方法</span>
-    <input type = "radio" name = "pay" value = "1" checked = "checked">現金支払い
-    <input type = "radio" name = "pay" value = "2">クレジットカード
+    <label><input type = "radio" name = "pay" value = "1" checked = "checked">現金支払い</label>
+    <label><input type = "radio" name = "pay" value = "2">クレジットカード</label>
+    <label><input type = "radio" name = "pay" value = "3">ローン支払い</label>
     <s:submit value = "購入"/>
     </s:form>
 

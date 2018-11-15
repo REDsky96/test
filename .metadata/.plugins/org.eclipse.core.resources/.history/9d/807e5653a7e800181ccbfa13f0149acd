@@ -1,0 +1,9 @@
+package com.esite.dao;
+
+public class MyPageDAO {
+
+	public MyPageDTO getMyPageUserInfo(String itenm_transaction_ String user_master_id) throws SQLEcxeption{
+
+	}
+
+}

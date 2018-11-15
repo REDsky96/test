@@ -1,0 +1,15 @@
+package com.esite.dao;
+
+import com.esite.util.*;
+
+public class BuyItemCompleteDAO {
+
+	private DateUtil u = new DateUtil();
+	private String sql = "insert into user_buy_item_transaction(item_transaction_id, total_price, total_count, user_master_id, pay,insert_date)values(?,?,?,?,?,?)";
+
+	public void buyItemInfo(String item_transaction_id, String_user_master_id, String total_price, String total_count, String pay)throws SQLException{
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+	}
+
+}

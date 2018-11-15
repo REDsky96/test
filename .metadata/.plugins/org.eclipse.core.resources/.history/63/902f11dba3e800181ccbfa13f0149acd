@@ -1,0 +1,50 @@
+package com.esite.dto;
+
+public class MyPageDTO {
+
+	private String itemName;
+	private String totalPrice;
+	private String totalCount;
+	private String payment;
+
+	public String getItemName(){
+		return itemName;
+	}
+
+	public void setString(String itemName){
+		this.itemName = itemName;
+	}
+
+	public String getTotalPrice(){
+		return totalPrice;
+	}
+
+	public void setTotalPrce(String totalPrice){
+		this.totalPrice = totalPrice;
+	}
+
+	public String getItemName(){
+		return itemName;
+	}
+
+	public void setString(String itemName){
+		this.itemName = itemName;
+	}
+
+	public String getItemName(){
+		return itemName;
+	}
+
+	public void setString(String itemName){
+		this.itemName = itemName;
+	}
+
+	public String getItemName(){
+		return itemName;
+	}
+
+	public void setString(String itemName){
+		this.itemName = itemName;
+	}
+
+}

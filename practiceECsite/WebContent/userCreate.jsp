@@ -11,7 +11,7 @@
   <p>～UserCreate～</p>
 
   <s:if test = "errorMessage != ''">
-  <s:property value = "errorMessage" escape = "false"/>
+  <s:property value = "session.get('error')"/>
   </s:if>
 
   <s:form action = "UserCreateConfirmAction">
