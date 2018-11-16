@@ -21,13 +21,47 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 
         if(deleteFlg == null){
         	String item_transaction_id = session.get("id").toString();
-        	String user_name_id = session.get("login_user_id").toString();
-        	dto = dao.getMyPageUserInfo(itenm_transaction_id, user_master_id);
+        	String user_master_id = session.get("login_user_id").toString();
+        	dto = dao.getMyPageUserInfo(item_transaction_id, user_master_id);
         	session.put("buyItem_name", dto.getItemName());
         	session.put("total_price", dto.getTotalPrice());
         	session.put("total_count", dto.getTotalCount());
         	session.put("total_payment",dto.getPaymetn());
+        	session.put("message","");
+
+        }else if (deleteFlg.equals("1")) {
+        	delete();
         }
+
+        result = SUCCESS;
+        return result ;
+	}
+
+	public void delete()throws SQLException{
+		MyPageDAO dao = new MyPageDAO();
+
+		String item_transaction_id = session.get("id").toString();
+		String user_master_id = session.get("login_user_id").toString();
+
+		int res = dao.buyItemHistoryDelete(item_transaction_id, user_master_id);
+		if(res > 0) {
+			session.put("message", "商品情報を正しく削除しました");
+		}else if(res == 0) {
+			session.put("message", "商品情報の削除に失敗しました。");
+		}
+
+	}
+
+	public String getDeleteFlg() {
+		return deleteFlg;
+	}
+
+	public void setDeleteFlg(String deleteFlg) {
+		this.deleteFlg = deleteFlg;
+	}
+
+	public void setSession(Map<String, Object>session) {
+		this.session =session;
 	}
 
 }

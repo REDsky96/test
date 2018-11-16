@@ -10,7 +10,7 @@ import com.esite.util.DBConnector;
 
 public class MyPageDAO {
 
-	public MyPageDTO getMyPageUserInfo(String itenm_transaction_id, String user_master_id) throws SQLException{
+	public MyPageDTO getMyPageUserInfo(String item_transaction_id, String user_master_id) throws SQLException{
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 		MyPageDTO dto = new MyPageDTO();
@@ -19,7 +19,7 @@ public class MyPageDAO {
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, itenm_transaction_id);
+			ps.setString(1, item_transaction_id);
 			ps.setString(2, user_master_id);
 			ResultSet rs = ps.executeQuery();
 
