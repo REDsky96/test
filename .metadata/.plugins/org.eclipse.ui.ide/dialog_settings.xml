@@ -12,6 +12,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\internousdev\Desktop\workspace\workspace-inoue\test\ecsite"/>
+			<item value="C:\Users\internousdev\Desktop\workspace\workspace-inoue\test\practiceECsite"/>
 			<item value="/Users/kokiinoue/Desktop/workspace/test/practiceECsite"/>
 			<item value="C:\Users\internousdev\Desktop\workspace\workspace-inoue\test\WebProj5"/>
 			<item value="C:\Users\internousdev\Desktop\workspace\workspace-inoue"/>

@@ -54,5 +54,43 @@
     <result name="success">home.jsp</result>
   </action>
 
+  <action name = "ItemCreateAction" class = "com.internousdev.ecsite.action.ItemCreateAction" method = "execute">
+    <result name = "success">itemCreate.jsp</result>
+  </action>
+
+  <action name = "ItemCreateConfirmAction" class = "com.internousdev.ecsite.action.ItemCreateConfirmAction" method = "execute">
+    <result name = "success">itemCreateConfirm.jsp</result>
+  </action>
+
+  <action name = "ItemCreateCompleteAction" class = "com.internousdev.ecsite.action.ItemCreateCompleteAction" method = "execute">
+    <result name = "success">itemCreateComplete.jsp</result>
+  </action>
+
+  <action name = "ItemListAction" class = "com.internousdev.ecsite.action.ItemListAction" method = "execute">
+    <result name = "success">itemList.jsp</result>
+    <result name = "error">itemListError.jsp</result>
+  </action>
+
+  <action name = "UserListAction" class = "com.internousdev.ecsite.action.UserListAction" method = "execute">
+    <result name = "success">userList.jsp</result>
+    <result name = "error">userListDeleteCompleteError.jsp</result>
+  </action>
+
+  <action name = "ItemListDeleteConfirmAction" class = "com.internousdev.ecsite.action.ItemListDeleteConfirmAction" method = "execute">
+    <result name = "success">itemListDeleteConfirm.jsp</result>
+  </action>
+
+  <action name = "ItemListDeleteCompleteAction" class = "com.internousdev.ecsite.action.ItemListDeleteCompleteAction" method = "execute">
+    <result name = "success">itemListDeleteComplete.jsp</result>
+  </action>
+
+  <action name = "UserListDeleteConfirmAction" class = "com.internousdev.ecsite.action.UserListDeleteConfirmAction" method = "execute">
+    <result name = "success">userListDeleteConfirm.jsp</result>
+  </action>
+
+  <action name = "UserListDeleteCompleteAction" class = "com.internousdev.ecsite.action.UserListDeleteCompleteAction" method = "execute">
+    <result name = "success">userListDeleteComplete.jsp</result>
+  </action>
+
   </package>
 </struts>

@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=/Users/kokiinoue/.git\:/Users/kokiinoue/Desktop/workspace/test/\\Users\\internousdev\\Desktop\\workspace\\workspace-inoue\\test\\.git;\:/Users/kokiinoue/Desktop/workspace/test/C\:
+GitRepositoriesView.GitDirectories=\:/Users/kokiinoue/Desktop/workspace/test/C\:;/Users/kokiinoue/.git\:/Users/kokiinoue/Desktop/workspace/test/\\Users\\internousdev\\Desktop\\workspace\\workspace-inoue\\test\\.git;C\:\\Users\\internousdev\\Desktop\\workspace\\workspace-inoue\\test\\.git;
 GitRepositoriesView.GitDirectories.relative=/Users/kokiinoue/.git\:\\Users\\internousdev\\Desktop\\workspace\\workspace-inoue\\test\\.git;\:C\:
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
