@@ -15,7 +15,7 @@ public class MyPageDAO {
 		Connection con = db.getConnection();
 		MyPageDTO dto = new MyPageDTO();
 
-		String sql = "select iit.item_name, ubit.total_price, ubit.total_count, ubit.pay from user_buy_item_transaction ubit left join item_info_transaction iit on ubit.user_master_id = ? order by ubit.insert_date desc";
+		String sql = "select iit.item_name, ubit.total_price, ubit.total_count, ubit.pay from user_buy_item_transaction ubit left join item_info_transaction iit on ubit.user_master_id = ? and ubit.user_master_id = ? order by ubit.insert_date desc";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
