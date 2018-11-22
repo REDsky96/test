@@ -80,7 +80,7 @@ clear:both;
             </td>
 
             <td>
-              <s:property value = "loginUserId" escape = "false"/>
+              <s:property value = "#session.loginUserId" escape = "false"/>
             </td>
           </tr>
 
@@ -89,7 +89,7 @@ clear:both;
               <label>ログインPASS:</label>
             </td>
             <td>
-              <s:property value = "loginPassword" escape = "false"/>
+              <s:property value = "#session.loginPassword" escape = "false"/><!-- せっかくUserCreateConfirmActionでsessionを使っているのでここではsession.した。 -->
             </td>
           </tr>
 
@@ -98,7 +98,7 @@ clear:both;
               <label>ユーザー名:</label>
             </td>
             <td>
-              <s:property value = "userName" escape = "false"/>
+              <s:property value = "#session.userName" escape = "false"/>
             </td>
           </tr>
 

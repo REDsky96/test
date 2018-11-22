@@ -84,7 +84,7 @@ clear:both;
     </td>
 
     <td>
-      <input type="text" name="loginUserId" value="" />
+      <input type="text" name="loginUserId" value="" /><!-- valueが""なのは値を入れるのはユーザーだから -->
     </td>
   </tr>
 

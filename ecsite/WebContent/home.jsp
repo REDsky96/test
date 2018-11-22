@@ -79,6 +79,8 @@ text-align: center;
         <s:submit value = "商品購入"/>
       </s:form>
 
+      <a href = "admin.jsp">管理者</a>
+
       <s:if test = "#session.id !=null">
         <p>ログアウトする場合は
           <a href = '<s:url action = "LogoutAction"/>'>こちら</a></p>

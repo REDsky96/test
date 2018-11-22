@@ -74,6 +74,7 @@ clear:both;
 
     <div>
       <s:form action = "BuyItemAction">
+      <s:iterator>
       <table>
         <tr>
           <td>
@@ -116,6 +117,7 @@ clear:both;
           <td>
             <input type = "radio" name = "pay" value = "1" checked = "checked">現金払い
             <input type = "radio" name = "pay" value = "2">クレジットカード
+            <input type = "radio" name = "pay" value = "3">ローン払い
           </td>
         </tr>
 
@@ -125,6 +127,7 @@ clear:both;
           </td>
         </tr>
       </table>
+      </s:iterator>
     </s:form>
 
     <div>

@@ -20,13 +20,17 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		int intStock = Integer.parseInt(session.get("stock").toString());
 		int intPrice = Integer.parseInt(session.get("buyItem_price").toString());
 		session.put("buyItem_price", intStock * intPrice);
+
 		String payment;
 
 		if(pay.equals("1")){
 			payment = "現金払い";
 			session.put("pay",payment);
-		}else{
+		}else if (pay.equals("2")){
 			payment = "クレジットカード";
+			session.put("pay",payment);
+		}else{
+			payment = "ローン払い";
 			session.put("pay",payment);
 		}
 		return result;

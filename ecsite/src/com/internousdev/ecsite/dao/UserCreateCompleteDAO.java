@@ -3,6 +3,7 @@ package com.internousdev.ecsite.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
 import com.internousdev.ecsite.util.DBConnector;
 import com.internousdev.ecsite.util.DateUtil;
 
@@ -12,6 +13,7 @@ public class UserCreateCompleteDAO {
 
 	private String sql = "insert into login_user_transaction(login_id, login_pass, user_name, insert_date) values(?,?,?,?)";
 
+	//以下の3つの引数はCompleteActionの実引数がこの下の仮引数に渡ってる。
 	public void createUser(String loginUserId, String loginUserPassword, String userName) throws SQLException{
 		DBConnector dbConnector = new DBConnector();
 		Connection connection = dbConnector.getConnection();

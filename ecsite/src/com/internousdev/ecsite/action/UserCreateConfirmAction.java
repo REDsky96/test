@@ -20,7 +20,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 		if(!(loginUserId.equals(""))
 				&& !(loginPassword.equals(""))
 				&& !(userName.equals(""))){
-			session.put("loginUserId", loginUserId);
+			session.put("loginUserId", loginUserId);//ここのsession.putで値を表示かつ更新。またUserCreateCompleteActionでこのsessionをgetするため。
 			session.put("loginPassword", loginPassword);
 			session.put("userName", userName);
 		}else {
