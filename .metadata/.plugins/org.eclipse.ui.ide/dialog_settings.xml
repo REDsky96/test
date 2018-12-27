@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/kokiinoue/Desktop/workspace/test/ecsite"/>
 			<item value="C:\Users\internousdev\Desktop\ecsiteSTEP5"/>
 			<item value="C:\Users\internousdev\Desktop\workspace\workspace-inoue\test\ecsite"/>
 			<item value="C:\Users\internousdev\Desktop\workspace\workspace-inoue\test\practiceECsite"/>
@@ -28,7 +29,7 @@
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
-		<item value="-172" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
 		<item value="205" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -101,7 +101,7 @@ text-align: center;
       <s:submit value = "削除"/>
     </s:form>
 
-    <a href = "itemList.jsp"/>キャンセル</a>
+    <a href = "itemList.jsp">キャンセル</a>
 
   </div>
 
